@@ -6,7 +6,6 @@
  */
 class MaintenanceMode extends CComponent {
 
-    public $enabledMode = true;
     public $capUrl = 'maintenance/index';
     public $message = "Извините, на сайте ведутся технические работы.";
 
@@ -18,8 +17,6 @@ class MaintenanceMode extends CComponent {
     public $urls = array();
 
     public function init() {
-
-        if ($this->enabledMode) {
 
             $disable = in_array(Yii::app()->user->name, $this->users);
             foreach ($this->roles as $role) {
@@ -37,7 +34,6 @@ class MaintenanceMode extends CComponent {
 
                 Yii::app()->catchAllRequest = array($this->capUrl);
             }
-        }
 
     }
 

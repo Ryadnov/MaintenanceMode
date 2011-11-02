@@ -17,7 +17,7 @@ Add to config/main.php:
 
     'maintenanceMode' => array(
         'class' => 'ext.MaintenanceMode.MaintenanceMode',
-        'enabledMode' => true,
+        'enabled' => true,
         'message' => 'Hello!',
         // or
         //'capUrl' => 'site/contact',
