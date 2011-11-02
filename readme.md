@@ -8,7 +8,7 @@ Add to config/main.php:
     ...
     'components' => array(
             'maintenanceMode' => array(
-                'class' => 'application.extensions.MaintenanceMode.MaintenanceMode',
+                'class' => 'ext.MaintenanceMode.MaintenanceMode',
             ),
             ...
     ),
@@ -16,7 +16,7 @@ Add to config/main.php:
 ##Options
 
     'maintenanceMode' => array(
-        'class' => 'application.extensions.MaintenanceMode.MaintenanceMode',
+        'class' => 'ext.MaintenanceMode.MaintenanceMode',
         'enabledMode' => true,
         'message' => 'Hello!',
         // or

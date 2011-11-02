@@ -32,7 +32,7 @@ class MaintenanceMode extends CComponent {
 
             if (!$disable) {
                 if ($this->capUrl === 'maintenance/index') {
-                    Yii::app()->controllerMap['maintenance'] = 'application.extensions.MaintenanceMode.MaintenanceController';
+                    Yii::app()->controllerMap['maintenance'] = 'ext.MaintenanceMode.MaintenanceController';
                 }
 
                 Yii::app()->catchAllRequest = array($this->capUrl);
